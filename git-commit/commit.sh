@@ -24,7 +24,7 @@ then
 
   if [[ "$GITHUB_REF" -eq  "refs/heads/master" ]]
   then
-    echo "creating branch to merge into master"
+    echo "creating branch to merge from when committing to master"
     git checkout -b auto-commit
   fi
 
