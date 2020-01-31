@@ -22,7 +22,7 @@ then
     fi
   fi
 
-  if [[ "$GITHUB_REF" -eq  "refs/heads/master" ]]
+  if [[ "$GITHUB_REF" -eq  'refs/heads/master' ]]
   then
     echo "creating branch to merge from when committing to master"
     git checkout -b auto-commit
@@ -33,7 +33,7 @@ then
   git add "$INPUT_PATTERN"
   git commit -m "$COMMIT_MESSAGE"
 
-  if [[ "$GITHUB_REF" -eq  "refs/heads/master" ]]
+  if [[ "$GITHUB_REF" -eq  'refs/heads/master' ]]
   then
     echo "merging auto-commit into master"
     git checkout master
