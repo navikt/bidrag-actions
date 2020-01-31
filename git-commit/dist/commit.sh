@@ -22,10 +22,24 @@ then
     fi
   fi
 
+  if [[ "$GITHUB_REF" -eq  "refs/heads/master" ]]
+  then
+    echo "creating branch to merge into master"
+    git checkout -b auto-commit
+  fi
+
   echo "Committing changes with message: $COMMIT_MESSAGE"
 
   git add "$INPUT_PATTERN"
   git commit -m "$COMMIT_MESSAGE"
+
+  if [[ "$GITHUB_REF" -eq  "refs/heads/master" ]]
+  then
+    echo "merging auto-commit into master"
+    git checkout master
+    git merge auto-commit
+  fi
+
   git push
 
 else
