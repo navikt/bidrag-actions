@@ -1,4 +1,4 @@
-# bidrag-actions/build-node-artifact
+# actions/build-node-artifact
 
 This action will build an artifact with node (npm) and ncc (@zeit/ncc)
 

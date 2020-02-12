@@ -1,5 +1,5 @@
-# bidrag-actions
-Github Actions spesialisert for team bidrag
+# actions
+Github Actions for jactor-rises
 
 ### Hovedregel for design:
 Alt blir utført av bash-scripter slik at det enkelt kan testes på reell kodebase uten å måtte bygge med github. Alle "actions" som trenger input får
@@ -21,7 +21,7 @@ Andre sider ved design av disse "actions", er at de er laget for å kjøre samme
 | `release-prepare-mvn-pkg` -> `git-tag-n-commit-mvn-deploy` | `release-prepare-mvn-pkg` lager fil til `git-tag-n-commit-mvn-deploy` |
 
 ### Continuous integration
-![](https://github.com/navikt/bidrag-actions/workflows/build%20actions/badge.svg)
+![](https://github.com/jactor-rises/actions/workflows/build%20actions/badge.svg)
 
 Det er lagt inn en workflow for å bygge alle actions med npm og ncc. Derfor er det bare filene `/<action>/index.js` og `/<action>/<bash>.sh` som skal
 endres når man skal forandre logikk i "action".

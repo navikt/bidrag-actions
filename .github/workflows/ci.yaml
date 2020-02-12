@@ -15,44 +15,44 @@ jobs:
       - name: Debug workspace
         run: env
       - name: Install build-node-artifact
-        uses: navikt/bidrag-actions/build-node-artifact@master
+        uses: jactor-rises/actions/build-node-artifact@master
         with:
-          artifact_folder: bidrag-actions/build-node-artifact
+          artifact_folder: actions/build-node-artifact
       - name: Install git-commit
-        uses: navikt/bidrag-actions/build-node-artifact@master
+        uses: jactor-rises/actions/build-node-artifact@master
         with:
-          artifact_folder: bidrag-actions/git-commit
+          artifact_folder: actions/git-commit
       - name: Install git-tag
-        uses: navikt/bidrag-actions/build-node-artifact@master
+        uses: jactor-rises/actions/build-node-artifact@master
         with:
-          artifact_folder: bidrag-actions/git-tag
+          artifact_folder: actions/git-tag
       - name: Install git-tag-n-commit-mvn-deploy
-        uses: navikt/bidrag-actions/build-node-artifact@master
+        uses: jactor-rises/actions/build-node-artifact@master
         with:
-          artifact_folder: bidrag-actions/git-tag-n-commit-mvn-deploy
+          artifact_folder: actions/git-tag-n-commit-mvn-deploy
       - name: Install release-mvn-pkg
-        uses: navikt/bidrag-actions/build-node-artifact@master
+        uses: jactor-rises/actions/build-node-artifact@master
         with:
-          artifact_folder: bidrag-actions/release-mvn-pkg
+          artifact_folder: actions/release-mvn-pkg
       - name: Install release-prepare-mvn-pkg
-        uses: navikt/bidrag-actions/build-node-artifact@master
+        uses: jactor-rises/actions/build-node-artifact@master
         with:
-          artifact_folder: bidrag-actions/release-prepare-mvn-pkg
+          artifact_folder: actions/release-prepare-mvn-pkg
       - name: Install release-verify-auto-deploy
-        uses: navikt/bidrag-actions/build-node-artifact@master
+        uses: jactor-rises/actions/build-node-artifact@master
         with:
-          artifact_folder: bidrag-actions/release-verify-auto-deploy
+          artifact_folder: actions/release-verify-auto-deploy
       - name: Install setup-maven
-        uses: navikt/bidrag-actions/build-node-artifact@master
+        uses: jactor-rises/actions/build-node-artifact@master
         with:
-          artifact_folder: bidrag-actions/setup-maven
+          artifact_folder: actions/setup-maven
       - name: Install verify-mvn-dependencies
-        uses: navikt/bidrag-actions/build-node-artifact@master
+        uses: jactor-rises/actions/build-node-artifact@master
         with:
-          artifact_folder: bidrag-actions/verify-mvn-dependencies
+          artifact_folder: actions/verify-mvn-dependencies
       - run: date +"%Y-%m-%d:%T" > .build-date
-      - name: Commit ncc build in bidrag-actions
-        uses: navikt/bidrag-actions/git-commit@master
+      - name: Commit ncc build in actions
+        uses: jactor-rises/actions/git-commit@master
         with:
           commit_message: "{}: Fresh build of actions with npm and ncc"
           commit_message_file: .build-date

@@ -1,4 +1,4 @@
-# bidrag-actions/release-verify-auto-deploy
+# actions/release-verify-auto-deploy
 
 This action will verify if an auto-deploy of a release can be done by
 checking if the changelog for this artifact has been updated with the

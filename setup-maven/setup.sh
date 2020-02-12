@@ -7,7 +7,7 @@ MAVEN_REPO=~/.m2
 MAVEN_SETTINGS="<settings>
   <servers>
       <server>
-         <id>maven-release</id>
+         <id>jactor-rshared</id>
          <username>$GITHUB_ACTOR</username>
          <password>$GITHUB_TOKEN</password>
     </server>
@@ -22,7 +22,7 @@ MAVEN_SETTINGS="<settings>
           <url>https://repo.maven.apache.org/maven2</url>
         </repository>
         <repository>
-          <id>maven-release</id>
+          <id>jactor-rshared</id>
           <name>GitHub felles Apache Maven Packages</name>
           <url>https://maven.pkg.github.com/jactor-rises/jactor-shared/</url>
         </repository>

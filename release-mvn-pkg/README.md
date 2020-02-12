@@ -1,6 +1,6 @@
-# bidrag-actions/release-mvn-pkg
+# actions/release-mvn-pkg
 
-En github action som vil legge en ny maven artefakt i github packages for navikt.
+En github action som vil legge en ny maven artefakt i github packages for jactor-rises.
 
 Det forventes at steget blir kjørt på en linux/unix maskin og har installert maven.
 Prosjektet må derfor også bygges med maven.

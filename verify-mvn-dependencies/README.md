@@ -1,4 +1,4 @@
-# bidrag-actions/verify-dependencies
+# actions/verify-dependencies
 
 This action will verify that the project object model (pom) contains no SNAPSHOT dependencies.
 
