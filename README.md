@@ -1,6 +1,13 @@
 # bidrag-actions
 Github Actions spesialisert for team bidrag
 
+## Arkivert repo
+Dette repositoriet er arkivert etter at det er splittet opp i 4 andre repoer som vil bli forvaltet videre:
+* bidrag-git
+* bidrag-maven
+* bidrag-node
+* bidrag-release
+
 ### Continuous integration
 ![](https://github.com/navikt/bidrag-actions/workflows/build%20actions/badge.svg)
 
